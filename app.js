@@ -77,6 +77,8 @@ app.get("/get-ad",async(req, res)=>{
     res.json(ad);
 });
 
+app.use(express.static('./build'))
+
 app.listen(6070, () => {
     console.log('server chal paring')
 });
